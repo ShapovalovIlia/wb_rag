@@ -1,16 +1,23 @@
-[build-system]
-requires = ["setuptools>=64.0"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "template"
-description = "Template"
+[tool.poetry]
+name = "wb-rag"
 version = "0.1.0"
-requires-python = ">=3.13"
+description = ""
+authors = ["ShapovalovIlia <ilia-shapvalov04@mail.ru>"]
+readme = "README.md"
 
-[project.optional-dependencies]
-dev = [
-    "mypy==1.15.*",
-    "ruff==0.11.*",
-    "pre-commit==4.2.*",
-]
+[tool.poetry.dependencies]
+python = "^3.12"
+mypy = "^1.17.1"
+ruff = "^0.12.11"
+pre-commit = "^4.3.0"
+rich = "^14.1.0"
+chromadb = "^1.0.20"
+sentence-transformers = "^5.1.0"
+rank-bm25 = "^0.2.2"
+openai = "^1.103.0"
+miro-api = "^2.2.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

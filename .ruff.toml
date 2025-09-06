@@ -12,7 +12,7 @@ lint.select = [
     "F401",     # unused-import
     "F406",     # undefined-local-with-nested-import-star-usage
     "DTZ003",   # call-datetime-utcnow
-    "EM102",    # f-string-in-exception
+    # "EM102",    # f-string-in-exception
     "INP001",   # implicit-namespace-package
     "PIE794",   # duplicate-class-field-definition
     "PIE796",   # non-unique-enums
